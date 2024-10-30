@@ -1,0 +1,323 @@
+/* Reset de estilo */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    background-color: #f7f7f7;
+}
+
+/* Header */
+header {
+    background-color: #4a90e2;
+    color: #fff;
+    padding: 1.5rem 1rem;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+nav ul li {
+    margin: 0 1.5rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #cce6ff;
+}
+
+/* Sección Inicio */
+section#inicio {
+    text-align: center;
+    padding: 3rem 1.5rem;
+    background-color: #e3f2fd;
+}
+
+section#inicio h2 {
+    font-size: 2rem;
+    color: #4a90e2;
+    margin-bottom: 1rem;
+}
+
+section#inicio p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #666;
+}
+
+/* Propiedades */
+
+#propiedades {
+    position: relative;
+    max-width: 600px;
+    margin: auto;
+}
+
+.tl_propiedad {
+    display: none;
+    background-color: #fff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    text-align: center;
+}
+
+.tl_propiedad img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.tl_propiedad h3 {
+    font-size: 1.4rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.tl_propiedad p {
+    color: #555;
+    line-height: 1.5;
+}
+.property-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Espacio entre tarjetas */
+    justify-content: center;
+    margin: 20px;
+}
+
+.property-card {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px; /* Tamaño fijo para cada tarjeta */
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.property-card:hover {
+    transform: scale(1.05);
+}
+
+.property-card img {
+    width: 100%;
+    border-radius: 5px;
+    height: 180px;
+    object-fit: cover;
+}
+
+.property-card h3 {
+    color: #007acc;
+    font-size: 18px;
+    margin: 15px 0 5px;
+}
+
+.property-card p {
+    color: #555;
+    font-size: 14px;
+    margin: 0 0 15px;
+}
+
+.property-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+.property-info .price {
+    color: #007acc;
+    font-weight: bold;
+}
+
+button {
+    background-color: #007acc;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #005f99;
+}
+
+
+/* Contenedor del formulario */
+.contact-form-section {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%; /* Ocupa el 100% de la pantalla */
+    max-width: 100%; /* Elimina el límite de ancho máximo */
+    text-align: center;
+    box-sizing: border-box;
+}
+
+/* Título del formulario */
+.contact-form-section h2 {
+    color: #007acc;
+    margin-bottom: 10px;
+}
+
+/* Descripción del formulario */
+.contact-form-section p {
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* Estilo de cada campo del formulario */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.contact-form label {
+    margin-top: 10px;
+    text-align: left;
+    color: #333;
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-top: 5px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Botón de enviar */
+.contact-form button {
+    background-color: #007acc;
+    color: #fff;
+    border: none;
+    padding: 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #005f99;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 2rem 1rem;
+    text-align: center;
+    margin-top: 2rem;
+    position: relative;
+}
+
+footer p {
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+}
+
+footer section#contacto {
+    color: #ddd;
+}
+
+footer section#contacto h4 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+footer section#contacto p {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+footer section#contacto p + p {
+    margin-top: 0.5rem;
+}
+
+#propiedades {
+    position: relative;
+}
+
+.tu_iniciales_propiedad {
+    background-color: #fff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    margin-bottom: 2rem;
+}
+
+
+/* Adaptativo */
+@media (min-width: 768px) {
+    nav ul {
+        justify-content: flex-end;
+        margin-right: 2rem;
+    }
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    header h1 {
+        margin-left: 2rem;
+    }
+
+    section#inicio, section#propiedades {
+        padding: 4rem 2rem;
+    }
+
+    .propiedad {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 2rem;
+    }
+
+    .propiedad h3 {
+        font-size: 1.6rem;
+    }
+
+    .propiedad p {
+        font-size: 1.1rem;
+        max-width: 60%;
+    }
+}
